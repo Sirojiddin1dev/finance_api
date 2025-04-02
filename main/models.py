@@ -62,35 +62,35 @@ class BalanceAdjustmentLog(models.Model):
         return f"{self.get_fund_type_display()} {action} by {self.percentage}% on {self.timestamp.strftime('%Y-%m-%d %H:%M')}"
 
 
-class PaymentCard(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cards')
-    card_number = models.CharField(
-        max_length=19,
-        validators=[
-            RegexValidator(
-                regex=r'^\d{4} \d{4} \d{4} \d{4}$',
-                message='Karta raqami 16 ta raqamdan iborat bo\'lishi kerak'
-            )
-        ]
-    )
-    expiry_date = models.CharField(
-        max_length=5,
-        validators=[
-            RegexValidator(
-                regex=r'^(0[1-9]|1[0-2])/\d{2}$',
-                message='Yaroqlilik muddati MM/YY formatida bo\'lishi kerak'
-            )
-        ]
-    )
-    is_main = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "To'lov kartasi"
-        verbose_name_plural = "To'lov kartalari"
-
-    def __str__(self):
-        return f"{self.card_number} ({self.user.username})"
+# class PaymentCard(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cards')
+#     card_number = models.CharField(
+#         max_length=19,
+#         validators=[
+#             RegexValidator(
+#                 regex=r'^\d{4} \d{4} \d{4} \d{4}$',
+#                 message='Karta raqami 16 ta raqamdan iborat bo\'lishi kerak'
+#             )
+#         ]
+#     )
+#     expiry_date = models.CharField(
+#         max_length=5,
+#         validators=[
+#             RegexValidator(
+#                 regex=r'^(0[1-9]|1[0-2])/\d{2}$',
+#                 message='Yaroqlilik muddati MM/YY formatida bo\'lishi kerak'
+#             )
+#         ]
+#     )
+#     is_main = models.BooleanField(default=False)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#
+#     class Meta:
+#         verbose_name = "To'lov kartasi"
+#         verbose_name_plural = "To'lov kartalari"
+#
+#     def __str__(self):
+#         return f"{self.card_number} ({self.user.username})"
 
 
 class DailyTransaction(models.Model):
@@ -117,54 +117,49 @@ class DailyTransaction(models.Model):
         return f"{self.user.username} - {self.category.name} - {self.amount}"
 
 
-class Investment(models.Model):
-    INVESTMENT_TYPES = (
-        ('reit', 'REIT Fond'),
-        ('stock', 'Aksiya'),
-        ('bond', 'Obligatsiya'),
-        ('other', 'Boshqa'),
-    )
-
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='investments')
-    type = models.CharField(max_length=20, choices=INVESTMENT_TYPES)
-    card = models.ForeignKey(PaymentCard, on_delete=models.SET_NULL, null=True)
-    amount = models.DecimalField(
-        max_digits=15,
-        decimal_places=2,
-        validators=[MinValueValidator(0)]
-    )
-    status = models.CharField(
-        max_length=20,
-        choices=[
-            ('pending', 'Kutilmoqda'),
-            ('completed', 'Muvaffaqiyatli'),
-            ('failed', 'Muvaffaqiyatsiz'),
-        ],
-        default='pending'
-    )
-    description = models.TextField(null=True, blank=True)
-    date = models.DateField(default=timezone.now)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Investitsiya"
-        verbose_name_plural = "Investitsiyalar"
-        ordering = ['-date', '-created_at']
-
-    def __str__(self):
-        return f"{self.user.username} - {self.get_type_display()} - {self.amount}"
+# class Investment(models.Model):
+#     INVESTMENT_TYPES = (
+#         ('reit', 'REIT Fond'),
+#         ('stock', 'Aksiya'),
+#         ('bond', 'Obligatsiya'),
+#         ('other', 'Boshqa'),
+#     )
+#
+#     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='investments')
+#     type = models.CharField(max_length=20, choices=INVESTMENT_TYPES)
+#     card = models.ForeignKey(PaymentCard, on_delete=models.SET_NULL, null=True)
+#     amount = models.DecimalField(
+#         max_digits=15,
+#         decimal_places=2,
+#         validators=[MinValueValidator(0)]
+#     )
+#     status = models.CharField(
+#         max_length=20,
+#         choices=[
+#             ('pending', 'Kutilmoqda'),
+#             ('completed', 'Muvaffaqiyatli'),
+#             ('failed', 'Muvaffaqiyatsiz'),
+#         ],
+#         default='pending'
+#     )
+#     description = models.TextField(null=True, blank=True)
+#     date = models.DateField(default=timezone.now)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#
+#     class Meta:
+#         verbose_name = "Investitsiya"
+#         verbose_name_plural = "Investitsiyalar"
+#         ordering = ['-date', '-created_at']
+#
+#     def __str__(self):
+#         return f"{self.user.username} - {self.get_type_display()} - {self.amount}"
 
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     push_notifications = models.BooleanField(default=True)
-    dark_mode = models.BooleanField(default=False)
-    language = models.CharField(
-        max_length=10,
-        choices=[('uz', 'O\'zbek'), ('ru', 'Русский'), ('en', 'English')],
-        default='uz'
-    )
+
 
     class Meta:
         verbose_name = "Foydalanuvchi profili"
