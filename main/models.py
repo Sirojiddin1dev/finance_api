@@ -184,3 +184,19 @@ class Notification(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.title}"
+
+class About(models.Model):
+    title = models.CharField(max_lenght = 100, blank=False)
+    deskription = models.CharField(max_lenght = 255, blank=False)
+    text = models.TextField()
+    video = models.CharField(max_lenght = 50)
+
+    def __str__(self):
+        return self.title
+
+class Help(models.Model):
+    telegram = models.CharField(_("Alloqa marqazi"), max_length=500)
+    call = models.CharField(_("Alloqa markazi"), max_length=13)
+
+    def __str__(self):
+        return self.telegram
