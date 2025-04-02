@@ -73,89 +73,89 @@ class BalanceAdjustmentLogAdmin(admin.ModelAdmin):
         return False
 
 
-class BalanceAdjustmentAdmin(admin.ModelAdmin):
-    change_list_template = 'admin/balance_adjustment.html'
-
-    def get_urls(self):
-        urls = super().get_urls()
-        custom_urls = [
-            path('adjust-balance/', self.adjust_balance_view, name='adjust-balance'),
-        ]
-        return custom_urls + urls
-
-    @transaction.atomic
-    def apply_adjustment(self, request, form):
-        fund_type = form.cleaned_data['fund_type']
-        percentage = form.cleaned_data['percentage']
-        adjustment_type = form.cleaned_data['adjustment_type']
-
-        users = User.objects.filter(is_active=True)
-        affected_users = 0
-
-        for user in users:
-            if fund_type == 'php_invest':
-                previous_balance = user.php_invest_balance
-                adjustment_amount = (previous_balance * Decimal(percentage) / Decimal(100))
-
-                if adjustment_type == 'increase':
-                    user.php_invest_balance += adjustment_amount
-                else:  # decrease
-                    user.php_invest_balance -= adjustment_amount
-                    # Ensure balance doesn't go below zero
-                    if user.php_invest_balance < 0:
-                        user.php_invest_balance = Decimal('0.00')
-
-                user.save()
-                affected_users += 1
-
-            elif fund_type == 'php_reit':
-                previous_balance = user.php_reit_balance
-                adjustment_amount = (previous_balance * Decimal(percentage) / Decimal(100))
-
-                if adjustment_type == 'increase':
-                    user.php_reit_balance += adjustment_amount
-                else:  # decrease
-                    user.php_reit_balance -= adjustment_amount
-                    # Ensure balance doesn't go below zero
-                    if user.php_reit_balance < 0:
-                        user.php_reit_balance = Decimal('0.00')
-
-                user.save()
-                affected_users += 1
-
-        # Log the adjustment
-        log = BalanceAdjustmentLog.objects.create(
-            admin=request.user,
-            fund_type=fund_type,
-            percentage=percentage,
-            adjustment_type=adjustment_type,
-            affected_users_count=affected_users
-        )
-
-        return affected_users
-
-    def adjust_balance_view(self, request):
-        if request.method == 'POST':
-            form = BalanceAdjustmentForm(request.POST)
-            if form.is_valid():
-                affected_users = self.apply_adjustment(request, form)
-                self.message_user(
-                    request,
-                    f"Successfully adjusted balances for {affected_users} users.",
-                    messages.SUCCESS
-                )
-                return redirect('admin:index')
-        else:
-            form = BalanceAdjustmentForm()
-
-        context = {
-            'form': form,
-            'title': 'Adjust User Balances',
-            'opts': self.model._meta,
-        }
-        return render(request, 'admin/balance_adjustment_form.html', context)
+# class BalanceAdjustmentAdmin(admin.ModelAdmin):
+#     change_list_template = 'admin/balance_adjustment.html'
+#
+#     def get_urls(self):
+#         urls = super().get_urls()
+#         custom_urls = [
+#             path('adjust-balance/', self.adjust_balance_view, name='adjust-balance'),
+#         ]
+#         return custom_urls + urls
+#
+#     @transaction.atomic
+#     def apply_adjustment(self, request, form):
+#         fund_type = form.cleaned_data['fund_type']
+#         percentage = form.cleaned_data['percentage']
+#         adjustment_type = form.cleaned_data['adjustment_type']
+#
+#         users = User.objects.filter(is_active=True)
+#         affected_users = 0
+#
+#         for user in users:
+#             if fund_type == 'php_invest':
+#                 previous_balance = user.php_invest_balance
+#                 adjustment_amount = (previous_balance * Decimal(percentage) / Decimal(100))
+#
+#                 if adjustment_type == 'increase':
+#                     user.php_invest_balance += adjustment_amount
+#                 else:  # decrease
+#                     user.php_invest_balance -= adjustment_amount
+#                     # Ensure balance doesn't go below zero
+#                     if user.php_invest_balance < 0:
+#                         user.php_invest_balance = Decimal('0.00')
+#
+#                 user.save()
+#                 affected_users += 1
+#
+#             elif fund_type == 'php_reit':
+#                 previous_balance = user.php_reit_balance
+#                 adjustment_amount = (previous_balance * Decimal(percentage) / Decimal(100))
+#
+#                 if adjustment_type == 'increase':
+#                     user.php_reit_balance += adjustment_amount
+#                 else:  # decrease
+#                     user.php_reit_balance -= adjustment_amount
+#                     # Ensure balance doesn't go below zero
+#                     if user.php_reit_balance < 0:
+#                         user.php_reit_balance = Decimal('0.00')
+#
+#                 user.save()
+#                 affected_users += 1
+#
+#         # Log the adjustment
+#         log = BalanceAdjustmentLog.objects.create(
+#             admin=request.user,
+#             fund_type=fund_type,
+#             percentage=percentage,
+#             adjustment_type=adjustment_type,
+#             affected_users_count=affected_users
+#         )
+#
+#         return affected_users
+#
+#     def adjust_balance_view(self, request):
+#         if request.method == 'POST':
+#             form = BalanceAdjustmentForm(request.POST)
+#             if form.is_valid():
+#                 affected_users = self.apply_adjustment(request, form)
+#                 self.message_user(
+#                     request,
+#                     f"Successfully adjusted balances for {affected_users} users.",
+#                     messages.SUCCESS
+#                 )
+#                 return redirect('admin:index')
+#         else:
+#             form = BalanceAdjustmentForm()
+#
+#         context = {
+#             'form': form,
+#             'title': 'Adjust User Balances',
+#             'opts': self.model._meta,
+#         }
+#         return render(request, 'admin/balance_adjustment_form.html', context)
 
 
 # Admin saytiga Balance Adjustment sahifasini qo'shish
-admin.site.register(BalanceAdjustmentAdmin)
+# admin.site.register(BalanceAdjustmentAdmin)
 

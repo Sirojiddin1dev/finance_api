@@ -57,19 +57,19 @@ class MonthlyBalanceSerializer(serializers.Serializer):
     total_balance = serializers.DecimalField(max_digits=15, decimal_places=2)
 
 
-class PaymentCardSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = PaymentCard
-        fields = ['id', 'card_number', 'expiry_date', 'is_main']
-        read_only_fields = ['user']
-
-    def create(self, validated_data):
-        if validated_data.get('is_main'):
-            PaymentCard.objects.filter(
-                user=self.context['request'].user,
-                is_main=True
-            ).update(is_main=False)
-        return super().create(validated_data)
+# class PaymentCardSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = PaymentCard
+#         fields = ['id', 'card_number', 'expiry_date', 'is_main']
+#         read_only_fields = ['user']
+#
+#     def create(self, validated_data):
+#         if validated_data.get('is_main'):
+#             PaymentCard.objects.filter(
+#                 user=self.context['request'].user,
+#                 is_main=True
+#             ).update(is_main=False)
+#         return super().create(validated_data)
 
 
 class DailyTransactionSerializer(serializers.ModelSerializer):
@@ -83,17 +83,17 @@ class DailyTransactionSerializer(serializers.ModelSerializer):
         read_only_fields = ['user']
 
 
-class InvestmentSerializer(serializers.ModelSerializer):
-    card_number = serializers.CharField(source='card.card_number', read_only=True)
-    type_display = serializers.CharField(source='get_type_display', read_only=True)
-    status_display = serializers.CharField(source='get_status_display', read_only=True)
-
-    class Meta:
-        model = Investment
-        fields = ['id', 'type', 'type_display', 'card', 'card_number',
-                  'amount', 'status', 'status_display', 'description',
-                  'date', 'created_at']
-        read_only_fields = ['user', 'status']
+# class InvestmentSerializer(serializers.ModelSerializer):
+#     card_number = serializers.CharField(source='card.card_number', read_only=True)
+#     type_display = serializers.CharField(source='get_type_display', read_only=True)
+#     status_display = serializers.CharField(source='get_status_display', read_only=True)
+#
+#     class Meta:
+#         model = Investment
+#         fields = ['id', 'type', 'type_display', 'card', 'card_number',
+#                   'amount', 'status', 'status_display', 'description',
+#                   'date', 'created_at']
+#         read_only_fields = ['user', 'status']
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
