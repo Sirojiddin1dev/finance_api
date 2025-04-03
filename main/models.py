@@ -189,7 +189,6 @@ class About(models.Model):
     title = models.CharField(_("Sarlavhani kiriting"),max_lenght = 100, blank=False)
     deskription = models.CharField(_("Kisqacha fiqringizni kiriting"),max_lenght = 255, blank=False)
     text = models.TextField()
-    video = models.CharField(max_lenght = 50)
 
     def __str__(self):
         return self.title
@@ -205,3 +204,6 @@ class Help(models.Model):
 
 class Video(models.Model):
     video = models.CharField(_("Video urlsini kiriting"),max_length=50)
+    title = models.CharField(_("Sarlavhani kiriting"),max_lenght = 100, blank=False)
+    deskription = models.CharField(_("Kisqacha fiqringizni kiriting"),max_lenght = 255, blank=False)
+    text = models.TextField(_("Matni kiriting"))
