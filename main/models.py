@@ -186,7 +186,7 @@ class Notification(models.Model):
         return f"{self.user.username} - {self.title}"
 
 class About(models.Model):
-    text = models.TextField()
+    text = models.TextField(_("Matnni kiriting"))
 
     def __str__(self):
         return self.title
