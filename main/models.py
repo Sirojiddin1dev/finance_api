@@ -203,7 +203,7 @@ class Help(models.Model):
 class Video(models.Model):
     video = models.CharField(_("Video urlsini kiriting"),max_length=50)
     title = models.CharField(_("Sarlavhani kiriting"),max_lenght = 100, blank=False)
-    deskription = models.CharField(_("Qisqacha fiqringizni kiriting"),max_lenght = 255, blank=False)
+    description = models.CharField(_("Qisqacha fiqringizni kiriting"),max_lenght = 255, blank=False)
 
     def __str__(self):
         return self.title
