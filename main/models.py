@@ -193,17 +193,17 @@ class About(models.Model):
 
 
 class Help(models.Model):
-    telegram = models.CharField(_("Aloqa marqazi"), max_length=500)
-    call = models.CharField(_("Aloqa marqazi"), max_length=13)
+    telegram = models.CharField(_("Aloqa markazi"), max_length=500)
+    call = models.CharField(_("Aloqa markazi"), max_length=13)
 
     def __str__(self):
         return self.telegram
 
 
 class Video(models.Model):
-    video = models.CharField(_("Video urlsini kiriting"),max_length=50)
+    video = models.CharField(_("Video urlini kiriting"),max_length=50)
     title = models.CharField(_("Sarlavhani kiriting"),max_lenght = 100, blank=False)
-    description = models.CharField(_("Qisqacha fiqringizni kiriting"),max_lenght = 255, blank=False)
+    description = models.CharField(_("Qisqacha fikringizni kiriting"),max_lenght = 255, blank=False)
 
     def __str__(self):
         return self.title
