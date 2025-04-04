@@ -204,8 +204,8 @@ class Help(models.Model):
 
 class Video(models.Model):
     video = models.CharField(_("Video urlini kiriting"),max_length=50)
-    title = models.CharField(_("Sarlavhani kiriting"),max_lenght = 100, blank=False)
-    description = models.CharField(_("Qisqacha fikringizni kiriting"),max_lenght = 255, blank=False)
+    title = models.CharField(_("Sarlavhani kiriting"),max_length = 100, blank=False)
+    description = models.CharField(_("Qisqacha fikringizni kiriting"),max_length = 255, blank=False)
 
     def __str__(self):
         return self.title
