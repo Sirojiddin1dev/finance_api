@@ -128,4 +128,4 @@ class HelpSerializer(serializers.ModelSerializer):
 class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
-        fields = ['title', 'video', 'description']
+        fields = ['id', 'title', 'video', 'description']
