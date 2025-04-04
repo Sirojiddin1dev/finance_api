@@ -6,6 +6,8 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.exceptions import AuthenticationFailed
 from django.core.validators import MinValueValidator
 from django.core.validators import RegexValidator
+from django.utils.translation import gettext_lazy as _
+
 
 
 class User(AbstractUser):
