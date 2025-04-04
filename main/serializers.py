@@ -112,3 +112,20 @@ class NotificationSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'img', 'message', 'is_read', 'created_at']
         read_only_fields = ['user']
 
+
+class AboutSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = About
+        fields = ['text']
+
+
+class HelpSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Help
+        fields = ['telegram', 'call']
+
+
+class VideoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Video
+        fields = ['title', 'video', 'description']
