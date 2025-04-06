@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'dashboard.apps.DashboardConfig',
     'rest_framework',
     'drf_yasg',
     'rest_framework_simplejwt',
