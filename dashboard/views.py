@@ -1,3 +1,4 @@
+from http.client import responses
 from django.shortcuts import render
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -8,6 +9,11 @@ from main.serializers import NotificationSerializer, AboutSerializer, VideoSeria
 from rest_framework.decorators import api_view, permission_classes
 from drf_yasg import openapi
 
+
+@swagger_auto_schema(
+    methods= 'get',
+    responses= { 200: NotificationSerializer}
+)
 
 @permission_classes([IsAuthenticated])
 @api_view(['GET'])
@@ -22,13 +28,9 @@ def get_user_notifications(request, pk):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(
-    methods= 'get',
-    request_body=NotificationSerializer,
-    responses={
-        200: openapi.Response('Ajoyib')
-    }
+    methods='get',
+    responses = { 200: AboutSerializer }
 )
-
 
 @api_view(['GET'])
 def get_about(request):
@@ -40,6 +42,10 @@ def get_about(request):
     serializer = AboutSerializer(about)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
+@swagger_auto_schema(
+    methods='get',
+    responses = { 200: HelpSerializer }
+)
 
 @permission_classes([IsAuthenticated])
 @api_view(['GET'])
@@ -52,11 +58,15 @@ def get_help(request):
     serializer = HelpSerializer(help_info)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
+@swagger_auto_schema(
+    methods='get',
+    responses = { 200: VideoSerializer },
+)
 
-@permission_classes([IsAuthenticated])
 @api_view(['GET'])
 def get_videos(request):
-    videos = Video.objects.all().order_by('-id')
+    videos = Video.objects.all().order_by('-id')[:5]
     serializer = VideoSerializer(videos, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
+
 
