@@ -6700,3 +6700,4 @@ Traceback (most recent call last):
     raise e.__class__(
 TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x00000215D806B920>.
 INFO 2025-03-16 20:04:55,000 autoreload Watching for file changes with StatReloader
+INFO 2025-04-06 15:34:18,134 autoreload Watching for file changes with StatReloader

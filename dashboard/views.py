@@ -1,31 +1,39 @@
 from django.shortcuts import render
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
-from main.models import Notification, About , Video , Help, UserProfile
+from main.models import Notification, About , Video , Help, UserProfile, User
 from main.serializers import NotificationSerializer, AboutSerializer, VideoSerializer, HelpSerializer, UserProfileSerializer
 from rest_framework.decorators import api_view, permission_classes
-from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 
 @permission_classes([IsAuthenticated])
 @api_view(['GET'])
 def get_user_notifications(request, pk):
     try:
-        user = UserProfile.objects.get(pk=pk)
-    except UserProfile.DoesNotExist:
+        user = User.objects.get(pk=pk)
+    except User.DoesNotExist:
         return Response({"error": "User topilmadi."}, status=status.HTTP_404_NOT_FOUND)
 
     notifications = Notification.objects.filter(user=user)
     serializer = NotificationSerializer(notifications, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
+@swagger_auto_schema(
+    methods= 'get',
+    request_body=NotificationSerializer,
+    responses={
+        200: openapi.Response('Ajoyib')
+    }
+)
 
-@permission_classes([IsAuthenticated])
+
 @api_view(['GET'])
 def get_about(request):
     try:
-        about = About.objects.last()
+        about = About.objects.all().order_by('-id')[:1]
     except About.DoesNotExist:
         return Response({"error": "Ma'lumot topilmadi."}, status=status.HTTP_404_NOT_FOUND)
 
