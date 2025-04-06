@@ -65,7 +65,7 @@ def get_help(request):
 
 @api_view(['GET'])
 def get_videos(request):
-    videos = Video.objects.all().order_by('-id')[:5]
+    videos = Video.objects.all().order_by('-id')
     serializer = VideoSerializer(videos, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
