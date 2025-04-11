@@ -11,8 +11,8 @@ from drf_yasg import openapi
 
 
 @swagger_auto_schema(
-    methods= 'get',
-    responses= { 200: NotificationSerializer}
+    method= 'get',
+    response = { 200: NotificationSerializer}
 )
 
 @permission_classes([IsAuthenticated])
@@ -28,14 +28,14 @@ def get_user_notifications(request, pk):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(
-    methods='get',
-    responses = { 200: AboutSerializer }
+    method='get',
+    response = { 200: AboutSerializer }
 )
 
 @api_view(['GET'])
 def get_about(request):
     try:
-        about = About.objects.all().order_by('-id')[:1]
+        about = About.objects.last()
     except About.DoesNotExist:
         return Response({"error": "Ma'lumot topilmadi."}, status=status.HTTP_404_NOT_FOUND)
 
@@ -43,8 +43,8 @@ def get_about(request):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(
-    methods='get',
-    responses = { 200: HelpSerializer }
+    method ='get',
+    response  = { 200: HelpSerializer }
 )
 
 @permission_classes([IsAuthenticated])
@@ -59,8 +59,8 @@ def get_help(request):
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(
-    methods='get',
-    responses = { 200: VideoSerializer },
+    method ='get',
+    response = { 200: VideoSerializer },
 )
 
 @api_view(['GET'])

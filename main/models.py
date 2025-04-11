@@ -182,7 +182,7 @@ class Notification(models.Model):
         return f"{self.user.username} - {self.title}"
 
 class About(models.Model):
-    text = models.TextField(_("Matnni kiriting"))
+    text = models.TextField(_("Bu sayt foydalanuvchilarga xizmat ko‘rsatish uchun yaratilgan."))
 
     def __str__(self):
         return self.title
