@@ -7087,3 +7087,10 @@ INFO 2025-04-11 18:59:42,529 autoreload C:\Users\1\Desktop\finance_api\dashboard
 INFO 2025-04-11 18:59:43,125 autoreload Watching for file changes with StatReloader
 INFO 2025-04-11 19:01:49,098 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
 INFO 2025-04-11 19:01:49,747 autoreload Watching for file changes with StatReloader
+INFO 2025-04-12 05:03:03,620 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-12 05:04:11,462 log Not Found: /dashboard/get_user_notifications
+WARNING 2025-04-12 05:04:30,976 log Not Found: /dashboard/get_user_notifications/1/
+INFO 2025-04-12 05:07:37,508 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-12 05:07:38,086 autoreload Watching for file changes with StatReloader
+INFO 2025-04-12 05:09:31,256 autoreload Watching for file changes with StatReloader
+INFO 2025-04-12 05:11:34,735 autoreload Watching for file changes with StatReloader
