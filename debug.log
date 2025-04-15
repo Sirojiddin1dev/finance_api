@@ -7,8 +7,8 @@ INFO 2025-01-23 20:20:13,481 utils Token mavjud emas, qayta login qilinmoqda
 INFO 2025-01-23 20:20:13,482 utils Eskiz.uz ga ulanish: https://notify.eskiz.uz/api/auth/login
 DEBUG 2025-01-23 20:20:13,485 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:20:15,939 connectionpool https://notify.eskiz.uz:443 "POST /api/auth/login HTTP/1.1" 401 56
-INFO 2025-01-23 20:20:15,939 utils Login javobi: Status=401, Body={"message":"Неверный Email или пароль"}
-ERROR 2025-01-23 20:20:15,939 utils Login xatosi: 401 - {"message":"Неверный Email или пароль"}
+INFO 2025-01-23 20:20:15,939 utils Login javobi: Status=401, Body={"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
+ERROR 2025-01-23 20:20:15,939 utils Login xatosi: 401 - {"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
 DEBUG 2025-01-23 20:20:15,939 utils Headers: {'Authorization': 'Bearer None', 'Content-Type': 'application/json'}
 DEBUG 2025-01-23 20:20:15,939 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:20:19,772 connectionpool https://notify.eskiz.uz:443 "POST /api/message/sms/send HTTP/1.1" 401 58
@@ -17,8 +17,8 @@ WARNING 2025-01-23 20:20:19,772 utils Token eskirgan, qayta login qilinmoqda
 INFO 2025-01-23 20:20:19,772 utils Eskiz.uz ga ulanish: https://notify.eskiz.uz/api/auth/login
 DEBUG 2025-01-23 20:20:19,772 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:20:22,791 connectionpool https://notify.eskiz.uz:443 "POST /api/auth/login HTTP/1.1" 401 56
-INFO 2025-01-23 20:20:22,791 utils Login javobi: Status=401, Body={"message":"Неверный Email или пароль"}
-ERROR 2025-01-23 20:20:22,791 utils Login xatosi: 401 - {"message":"Неверный Email или пароль"}
+INFO 2025-01-23 20:20:22,791 utils Login javobi: Status=401, Body={"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
+ERROR 2025-01-23 20:20:22,791 utils Login xatosi: 401 - {"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
 ERROR 2025-01-23 20:20:22,807 utils Qayta login qilish muvaffaqiyatsiz
 ERROR 2025-01-23 20:20:22,807 utils SMS yuborib bo'lmadi: Autentifikatsiya xatosi
 ERROR 2025-01-23 20:20:22,807 log Internal Server Error: /api/signup/
@@ -28,8 +28,8 @@ INFO 2025-01-23 20:51:58,753 utils Token mavjud emas, qayta login qilinmoqda
 INFO 2025-01-23 20:51:58,757 utils Eskiz.uz ga ulanish: https://notify.eskiz.uz/api/auth/login
 DEBUG 2025-01-23 20:51:58,758 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:52:03,094 connectionpool https://notify.eskiz.uz:443 "POST /api/auth/login HTTP/1.1" 401 56
-INFO 2025-01-23 20:52:03,094 utils Login javobi: Status=401, Body={"message":"Неверный Email или пароль"}
-ERROR 2025-01-23 20:52:03,094 utils Login xatosi: 401 - {"message":"Неверный Email или пароль"}
+INFO 2025-01-23 20:52:03,094 utils Login javobi: Status=401, Body={"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
+ERROR 2025-01-23 20:52:03,094 utils Login xatosi: 401 - {"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
 DEBUG 2025-01-23 20:52:03,101 utils Headers: {'Authorization': 'Bearer None', 'Content-Type': 'application/json'}
 DEBUG 2025-01-23 20:52:03,102 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:52:03,858 connectionpool https://notify.eskiz.uz:443 "POST /api/message/sms/send HTTP/1.1" 401 58
@@ -38,8 +38,8 @@ WARNING 2025-01-23 20:52:03,860 utils Token eskirgan, qayta login qilinmoqda
 INFO 2025-01-23 20:52:03,860 utils Eskiz.uz ga ulanish: https://notify.eskiz.uz/api/auth/login
 DEBUG 2025-01-23 20:52:03,860 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-23 20:52:05,442 connectionpool https://notify.eskiz.uz:443 "POST /api/auth/login HTTP/1.1" 401 56
-INFO 2025-01-23 20:52:05,453 utils Login javobi: Status=401, Body={"message":"Неверный Email или пароль"}
-ERROR 2025-01-23 20:52:05,453 utils Login xatosi: 401 - {"message":"Неверный Email или пароль"}
+INFO 2025-01-23 20:52:05,453 utils Login javobi: Status=401, Body={"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
+ERROR 2025-01-23 20:52:05,453 utils Login xatosi: 401 - {"message":"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"}
 ERROR 2025-01-23 20:52:05,456 utils Qayta login qilish muvaffaqiyatsiz
 ERROR 2025-01-23 20:52:05,458 utils SMS yuborib bo'lmadi: Autentifikatsiya xatosi
 ERROR 2025-01-23 20:52:05,460 log Internal Server Error: /api/signup/
@@ -56,9 +56,9 @@ INFO 2025-01-24 14:42:34,733 utils Token muvaffaqiyatli olindi
 DEBUG 2025-01-24 14:42:34,733 utils Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzMDM3NTQsImlhdCI6MTczNzcxMTc1NCwicm9sZSI6InRlc3QiLCJzaWduIjoiMmYwMDU2MmJlZWU5NDQ0YzU1MDA0NWZlYjZkNTE0NWI2YjI2ZDYwZTlkOGNlYzk3NDg4MDAxOTdhNjM5MjRhNiIsInN1YiI6Ijk1MzUifQ.6_xbDccj96gEARLGtPuyr4DzxRu-xHUjJVk728E9QTs', 'Content-Type': 'application/json'}
 DEBUG 2025-01-24 14:42:34,739 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-24 14:42:35,536 connectionpool https://notify.eskiz.uz:443 "POST /api/message/sms/send HTTP/1.1" 400 251
-INFO 2025-01-24 14:42:35,537 utils SMS yuborish javobi: Status=400, Body={"id":"86ab9043-9928-47e3-b4ad-67804db5df9b","message":"Для теста можно использовать только один из этих текстов: Bu Eskiz dan test, Это тест от Eskiz, This is test from Eskiz","status":"error"}
+INFO 2025-01-24 14:42:35,537 utils SMS yuborish javobi: Status=400, Body={"id":"86ab9043-9928-47e3-b4ad-67804db5df9b","message":"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: Bu Eskiz dan test, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ Eskiz, This is test from Eskiz","status":"error"}
 ERROR 2025-01-24 14:42:35,537 utils Kutilmagan status kod: 400
-ERROR 2025-01-24 14:42:35,539 utils SMS yuborib bo'lmadi: Xatolik yuz berdi: 400 - {"id":"86ab9043-9928-47e3-b4ad-67804db5df9b","message":"Для теста можно использовать только один из этих текстов: Bu Eskiz dan test, Это тест от Eskiz, This is test from Eskiz","status":"error"}
+ERROR 2025-01-24 14:42:35,539 utils SMS yuborib bo'lmadi: Xatolik yuz berdi: 400 - {"id":"86ab9043-9928-47e3-b4ad-67804db5df9b","message":"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: Bu Eskiz dan test, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ Eskiz, This is test from Eskiz","status":"error"}
 ERROR 2025-01-24 14:42:35,543 log Internal Server Error: /api/signup/
 INFO 2025-01-24 14:49:53,931 utils SMS yuborilmoqda: Tel=998901480583, Xabar=Sizning tasdiqlash kodingiz: 975697
 DEBUG 2025-01-24 14:49:53,931 utils To'liq so'rov ma'lumotlari: URL=https://notify.eskiz.uz/api/message/sms/send, Data={'mobile_phone': '998901480583', 'message': 'Sizning tasdiqlash kodingiz: 975697', 'from': '4546'}
@@ -71,9 +71,9 @@ INFO 2025-01-24 14:49:55,767 utils Token muvaffaqiyatli olindi
 DEBUG 2025-01-24 14:49:55,769 utils Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAzMDQxOTUsImlhdCI6MTczNzcxMjE5NSwicm9sZSI6InRlc3QiLCJzaWduIjoiMmYwMDU2MmJlZWU5NDQ0YzU1MDA0NWZlYjZkNTE0NWI2YjI2ZDYwZTlkOGNlYzk3NDg4MDAxOTdhNjM5MjRhNiIsInN1YiI6Ijk1MzUifQ.z2cmHsjrfwKstQcueIkWFNVs5NhvdhvGhi0gWrNG0Vc', 'Content-Type': 'application/json'}
 DEBUG 2025-01-24 14:49:55,772 connectionpool Starting new HTTPS connection (1): notify.eskiz.uz:443
 DEBUG 2025-01-24 14:49:56,676 connectionpool https://notify.eskiz.uz:443 "POST /api/message/sms/send HTTP/1.1" 400 251
-INFO 2025-01-24 14:49:56,676 utils SMS yuborish javobi: Status=400, Body={"id":"da951753-f9df-478b-a626-e718f01f5a90","message":"Для теста можно использовать только один из этих текстов: Bu Eskiz dan test, Это тест от Eskiz, This is test from Eskiz","status":"error"}
+INFO 2025-01-24 14:49:56,676 utils SMS yuborish javobi: Status=400, Body={"id":"da951753-f9df-478b-a626-e718f01f5a90","message":"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: Bu Eskiz dan test, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ Eskiz, This is test from Eskiz","status":"error"}
 ERROR 2025-01-24 14:49:56,676 utils Kutilmagan status kod: 400
-ERROR 2025-01-24 14:49:56,692 utils SMS yuborib bo'lmadi: Xatolik yuz berdi: 400 - {"id":"da951753-f9df-478b-a626-e718f01f5a90","message":"Для теста можно использовать только один из этих текстов: Bu Eskiz dan test, Это тест от Eskiz, This is test from Eskiz","status":"error"}
+ERROR 2025-01-24 14:49:56,692 utils SMS yuborib bo'lmadi: Xatolik yuz berdi: 400 - {"id":"da951753-f9df-478b-a626-e718f01f5a90","message":"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: Bu Eskiz dan test, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ Eskiz, This is test from Eskiz","status":"error"}
 ERROR 2025-01-24 14:49:56,692 log Internal Server Error: /api/signup/
 INFO 2025-02-06 17:24:39,503 autoreload Watching for file changes with StatReloader
 INFO 2025-02-06 17:25:29,113 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
@@ -7095,7 +7095,7 @@ INFO 2025-04-12 05:07:38,086 autoreload Watching for file changes with StatReloa
 INFO 2025-04-12 05:09:31,256 autoreload Watching for file changes with StatReloader
 INFO 2025-04-12 05:11:34,735 autoreload Watching for file changes with StatReloader
 INFO 2025-04-12 21:53:41,209 autoreload Watching for file changes with StatReloader
-WARNING 2025-04-12 21:53:53,092 log Not Found: /фвьшт
+WARNING 2025-04-12 21:53:53,092 log Not Found: /пїЅпїЅпїЅпїЅпїЅ
 WARNING 2025-04-12 21:53:53,124 log Not Found: /favicon.ico
 INFO 2025-04-12 21:55:20,737 autoreload Watching for file changes with StatReloader
 ERROR 2025-04-12 21:55:57,661 log Internal Server Error: /admin/main/about/add/
