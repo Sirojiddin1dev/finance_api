@@ -7274,3 +7274,5 @@ DEBUG 2025-04-15 19:20:04,422 Image Importing WmfImagePlugin
 DEBUG 2025-04-15 19:20:04,425 Image Importing XbmImagePlugin
 DEBUG 2025-04-15 19:20:04,428 Image Importing XpmImagePlugin
 DEBUG 2025-04-15 19:20:04,431 Image Importing XVThumbImagePlugin
+INFO 2025-04-15 21:16:53,409 autoreload C:\Users\user\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 21:16:55,198 autoreload Watching for file changes with StatReloader
