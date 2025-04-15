@@ -10,8 +10,22 @@ from rest_framework.decorators import api_view, permission_classes
 from drf_yasg import openapi
 
 
+
 @swagger_auto_schema(
-    method= 'get',
+    method='get',
+    responses={200: NotificationSerializer(many=True)}
+)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_user_notification(request):
+    notifications = Notification.objects.filter(user=request.user)
+    serializer = NotificationSerializer(notifications, many=True)
+    return Response(serializer.data, status=200)
+
+
+@swagger_auto_schema(
+    method = 'get',
     response = { 200: NotificationSerializer}
 )
 
@@ -19,12 +33,10 @@ from drf_yasg import openapi
 @api_view(['GET'])
 def get_user_notifications(request, pk):
     try:
-        user = User.objects.get(pk=pk)
-    except User.DoesNotExist:
+        notification = Notification.objects.get(pk=pk)
+    except Notification.DoesNotExist:
         return Response({"error": "User topilmadi."}, status=status.HTTP_404_NOT_FOUND)
-
-    notifications = Notification.objects.filter(user=user)
-    serializer = NotificationSerializer(notifications, many=True)
+    serializer = NotificationSerializer(notification)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(

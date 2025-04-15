@@ -7274,3 +7274,1587 @@ DEBUG 2025-04-15 19:20:04,422 Image Importing WmfImagePlugin
 DEBUG 2025-04-15 19:20:04,425 Image Importing XbmImagePlugin
 DEBUG 2025-04-15 19:20:04,428 Image Importing XpmImagePlugin
 DEBUG 2025-04-15 19:20:04,431 Image Importing XVThumbImagePlugin
+INFO 2025-04-15 19:40:11,697 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-15 19:40:18,682 log Not Found: /dashboard/videos/1/
+INFO 2025-04-15 19:49:24,954 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 19:49:26,164 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 19:49:46,590 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 19:49:47,228 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 19:50:06,026 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+ERROR 2025-04-15 19:50:07,217 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+ERROR 2025-04-15 19:50:08,384 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+ERROR 2025-04-15 19:50:09,268 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+ERROR 2025-04-15 19:50:18,230 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+ERROR 2025-04-15 19:50:19,254 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(user=notifications)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1560, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1369, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1346, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "abdullox - aqwe4r5t6y": Must be "User" instance.
+INFO 2025-04-15 19:53:36,347 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 19:53:37,073 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 19:59:47,895 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 19:59:48,426 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 19:59:55,572 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = Notification.objects.filter(notification=notification)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'notification' into field. Choices are: created_at, id, img, is_read, message, title, user, user_id
+INFO 2025-04-15 20:04:29,232 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:04:29,883 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:05:04,358 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:05:04,999 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:05:11,967 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 26, in get_user_notifications
+    notifications = User.objects.filter(user=notification)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: balance_adjustments, daily_transactions, date_joined, email, first_name, groups, id, is_active, is_phone_verified, is_staff, is_superuser, last_login, last_name, logentry, notifications, otp, password, phone_number, php_invest_balance, php_reit_balance, profile, user_permissions, username
+INFO 2025-04-15 20:08:40,482 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:08:41,031 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:10:17,601 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:10:18,324 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:10:56,722 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:10:57,290 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:11:10,436 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:11:10,965 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:11:47,465 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:11:48,084 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:12:00,496 log Internal Server Error: /dashboard/get_user_notifications/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 19, in get_user_notifications
+    notifications = Notification.objects.filter(user=request.user).order_by('-created_at')
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001D86CAF6710>.
+INFO 2025-04-15 20:12:45,295 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:12:46,022 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:13:26,647 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:13:27,136 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:14:06,857 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:14:56,674 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:14:57,326 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:15:24,238 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:15:24,741 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:15:29,062 log Internal Server Error: /dashboard/get_user_notifications/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+TypeError: get_user_notifications() missing 1 required positional argument: 'pk'
+WARNING 2025-04-15 20:15:37,351 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:15:39,421 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:15:40,171 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:15:45,098 log Not Found: /dashboard/get_user_notification/1/
+WARNING 2025-04-15 20:15:46,299 log Not Found: /dashboard/get_user_notification/1/
+WARNING 2025-04-15 20:15:46,680 log Not Found: /dashboard/get_user_notification/1/
+WARNING 2025-04-15 20:16:07,976 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:16:42,646 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:16:54,719 log Not Found: /dashboard/get_user_notifications/1/
+WARNING 2025-04-15 20:17:06,062 log Not Found: /dashboard/get_user_notification_detail /1/
+WARNING 2025-04-15 20:17:09,077 log Forbidden: /dashboard/get_user_notification_detail/1/
+WARNING 2025-04-15 20:18:48,946 log Forbidden: /dashboard/get_user_notification_detail/1/
+INFO 2025-04-15 20:20:03,830 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:20:04,387 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:20:08,102 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 40, in get_user_notifications
+    notifications = User.objects.filter(user=notification)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: balance_adjustments, daily_transactions, date_joined, email, first_name, groups, id, is_active, is_phone_verified, is_staff, is_superuser, last_login, last_name, logentry, notifications, otp, password, phone_number, php_invest_balance, php_reit_balance, profile, user_permissions, username
+INFO 2025-04-15 20:28:19,688 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:28:20,231 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:29:03,557 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 40, in get_user_notifications
+    notifications = User.objects.filter(notification=notification)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'notification' into field. Choices are: balance_adjustments, daily_transactions, date_joined, email, first_name, groups, id, is_active, is_phone_verified, is_staff, is_superuser, last_login, last_name, logentry, notifications, otp, password, phone_number, php_invest_balance, php_reit_balance, profile, user_permissions, username
+INFO 2025-04-15 20:29:45,956 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:29:46,464 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:29:49,128 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 40, in get_user_notifications
+    notifications = User.objects.filter(is_phone_verified=notification)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 410, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 96, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1190, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1180, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“a - aqwe4r5t6y” value must be either True or False.']
+INFO 2025-04-15 20:30:31,546 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:30:32,109 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:30:35,100 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'title'.
+INFO 2025-04-15 20:32:08,313 autoreload C:\Users\1\Desktop\finance_api\main\serializers.py changed, reloading.
+INFO 2025-04-15 20:32:08,954 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:32:11,743 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `message` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'message'.
+INFO 2025-04-15 20:32:26,473 autoreload C:\Users\1\Desktop\finance_api\main\serializers.py changed, reloading.
+INFO 2025-04-15 20:32:27,145 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:32:41,614 autoreload C:\Users\1\Desktop\finance_api\main\serializers.py changed, reloading.
+INFO 2025-04-15 20:32:42,307 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-15 20:32:58,817 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-15 20:32:58,818 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-15 20:32:58,818 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-15 20:32:58,818 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-15 20:32:58,819 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-15 20:32:58,820 Image Importing BlpImagePlugin
+DEBUG 2025-04-15 20:32:58,823 Image Importing BmpImagePlugin
+DEBUG 2025-04-15 20:32:58,824 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-15 20:32:58,826 Image Importing CurImagePlugin
+DEBUG 2025-04-15 20:32:58,829 Image Importing DcxImagePlugin
+DEBUG 2025-04-15 20:32:58,833 Image Importing DdsImagePlugin
+DEBUG 2025-04-15 20:32:58,842 Image Importing EpsImagePlugin
+DEBUG 2025-04-15 20:32:58,844 Image Importing FitsImagePlugin
+DEBUG 2025-04-15 20:32:58,847 Image Importing FliImagePlugin
+DEBUG 2025-04-15 20:32:58,849 Image Importing FpxImagePlugin
+DEBUG 2025-04-15 20:32:58,852 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-15 20:32:58,852 Image Importing FtexImagePlugin
+DEBUG 2025-04-15 20:32:58,855 Image Importing GbrImagePlugin
+DEBUG 2025-04-15 20:32:58,857 Image Importing GifImagePlugin
+DEBUG 2025-04-15 20:32:58,858 Image Importing GribStubImagePlugin
+DEBUG 2025-04-15 20:32:58,860 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-15 20:32:58,863 Image Importing IcnsImagePlugin
+DEBUG 2025-04-15 20:32:58,871 Image Importing IcoImagePlugin
+DEBUG 2025-04-15 20:32:58,875 Image Importing ImImagePlugin
+DEBUG 2025-04-15 20:32:58,878 Image Importing ImtImagePlugin
+DEBUG 2025-04-15 20:32:58,881 Image Importing IptcImagePlugin
+DEBUG 2025-04-15 20:32:58,884 Image Importing JpegImagePlugin
+DEBUG 2025-04-15 20:32:58,885 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-15 20:32:58,885 Image Importing McIdasImagePlugin
+DEBUG 2025-04-15 20:32:58,887 Image Importing MicImagePlugin
+DEBUG 2025-04-15 20:32:58,890 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-15 20:32:58,891 Image Importing MpegImagePlugin
+DEBUG 2025-04-15 20:32:58,893 Image Importing MpoImagePlugin
+DEBUG 2025-04-15 20:32:58,900 Image Importing MspImagePlugin
+DEBUG 2025-04-15 20:32:58,903 Image Importing PalmImagePlugin
+DEBUG 2025-04-15 20:32:58,909 Image Importing PcdImagePlugin
+DEBUG 2025-04-15 20:32:58,911 Image Importing PcxImagePlugin
+DEBUG 2025-04-15 20:32:58,912 Image Importing PdfImagePlugin
+DEBUG 2025-04-15 20:32:58,926 Image Importing PixarImagePlugin
+DEBUG 2025-04-15 20:32:58,930 Image Importing PngImagePlugin
+DEBUG 2025-04-15 20:32:58,931 Image Importing PpmImagePlugin
+DEBUG 2025-04-15 20:32:58,931 Image Importing PsdImagePlugin
+DEBUG 2025-04-15 20:32:58,935 Image Importing QoiImagePlugin
+DEBUG 2025-04-15 20:32:58,938 Image Importing SgiImagePlugin
+DEBUG 2025-04-15 20:32:58,941 Image Importing SpiderImagePlugin
+DEBUG 2025-04-15 20:32:58,944 Image Importing SunImagePlugin
+DEBUG 2025-04-15 20:32:58,947 Image Importing TgaImagePlugin
+DEBUG 2025-04-15 20:32:58,949 Image Importing TiffImagePlugin
+DEBUG 2025-04-15 20:32:58,950 Image Importing WebPImagePlugin
+DEBUG 2025-04-15 20:32:58,958 Image Importing WmfImagePlugin
+DEBUG 2025-04-15 20:32:58,961 Image Importing XbmImagePlugin
+DEBUG 2025-04-15 20:32:58,965 Image Importing XpmImagePlugin
+DEBUG 2025-04-15 20:32:58,969 Image Importing XVThumbImagePlugin
+ERROR 2025-04-15 20:33:02,845 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'title'.
+INFO 2025-04-15 20:34:47,931 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:34:48,493 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:35:03,865 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:35:04,378 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:35:17,507 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:35:18,079 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:36:00,302 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:36:00,889 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:36:08,661 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 36, in get_user_notifications
+    notification = Notification.objects.get(pk=pk, user=request.user)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002222857DE50>.
+INFO 2025-04-15 20:37:23,752 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:37:24,393 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:37:25,458 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 36, in get_user_notifications
+    notification = Notification.objects.get(pk=pk, user=request.user)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C66A5EDE50>.
+ERROR 2025-04-15 20:37:27,723 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 36, in get_user_notifications
+    notification = Notification.objects.get(pk=pk, user=request.user)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C66A4FB820>.
+INFO 2025-04-15 20:38:38,101 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:38:38,655 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 20:39:04,438 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:39:05,008 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:39:09,570 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 36, in get_user_notifications
+    notification = Notification.objects.get(pk=pk, user=request.user)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002909430DE50>.
+ERROR 2025-04-15 20:39:11,445 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\auth\models.py", line 549, in __int__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 36, in get_user_notifications
+    notification = Notification.objects.get(pk=pk, user=request.user)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+        "Field '%s' expected a number but got %r." % (self.name, value),
+    ) from e
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002909421B820>.
+WARNING 2025-04-15 20:39:24,751 log Not Found: /dashboard/get_user_notification/1/
+WARNING 2025-04-15 20:39:32,051 log Not Found: /dashboard/get_user_notification/
+INFO 2025-04-15 20:39:49,180 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-15 20:39:49,736 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-15 20:39:52,822 log Forbidden: /dashboard/get_user_notification_detail/
+INFO 2025-04-15 20:45:35,681 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:45:36,219 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:46:22,371 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'title'.
+ERROR 2025-04-15 20:46:27,687 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'title'.
+INFO 2025-04-15 20:53:08,830 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:53:09,468 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-15 20:53:29,360 log Internal Server Error: /dashboard/get_user_notifications/1/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 42, in get_user_notifications
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 527, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `NotificationSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'title'.
+INFO 2025-04-15 20:55:27,497 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 20:55:28,047 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 21:01:37,620 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 21:01:38,236 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 21:01:41,994 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 21:01:42,522 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 21:09:33,868 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-15 21:09:34,445 autoreload Watching for file changes with StatReloader
