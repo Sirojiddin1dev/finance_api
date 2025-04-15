@@ -7094,3 +7094,183 @@ INFO 2025-04-12 05:07:37,508 autoreload C:\Users\1\Desktop\finance_api\dashboard
 INFO 2025-04-12 05:07:38,086 autoreload Watching for file changes with StatReloader
 INFO 2025-04-12 05:09:31,256 autoreload Watching for file changes with StatReloader
 INFO 2025-04-12 05:11:34,735 autoreload Watching for file changes with StatReloader
+INFO 2025-04-12 21:53:41,209 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-12 21:53:53,092 log Not Found: /פגüרע
+WARNING 2025-04-12 21:53:53,124 log Not Found: /favicon.ico
+INFO 2025-04-12 21:55:20,737 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-12 21:55:57,661 log Internal Server Error: /admin/main/about/add/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\main\models.py", line 188, in __str__
+    return self.title
+           ^^^^^^^^^^
+AttributeError: 'About' object has no attribute 'title'
+INFO 2025-04-12 21:57:31,624 autoreload Watching for file changes with StatReloader
+INFO 2025-04-12 22:00:37,671 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-12 22:00:47,204 log Not Found: /favicon.ico
+ERROR 2025-04-12 22:00:59,867 log Internal Server Error: /admin/main/about/add/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\main\models.py", line 188, in __str__
+    return self.title
+           ^^^^^^^^^^
+AttributeError: 'About' object has no attribute 'title'
+INFO 2025-04-12 22:03:32,931 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
+INFO 2025-04-12 22:03:33,568 autoreload Watching for file changes with StatReloader
+INFO 2025-04-13 21:51:36,164 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-13 21:51:48,880 log Not Found: /favicon.ico
+INFO 2025-04-14 22:54:46,270 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-14 22:54:59,662 log Not Found: /dashboard/video/1/
+WARNING 2025-04-14 22:55:16,369 log Not Found: /favicon.ico
+WARNING 2025-04-14 22:55:52,037 log Not Found: /dashboard/video/1/
+WARNING 2025-04-14 22:56:23,360 log Not Found: /dashboard/videos/1/
+WARNING 2025-04-14 22:56:36,629 log Not Found: /dashboard/videos/1/
+INFO 2025-04-14 22:57:16,668 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-14 22:57:17,263 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 22:59:21,254 autoreload C:\Users\1\Desktop\finance_api\dashboard\urls.py changed, reloading.
+INFO 2025-04-14 22:59:21,999 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-14 22:59:30,370 log Not Found: /dashboard/videos/1/
+WARNING 2025-04-14 22:59:32,506 log Not Found: /dashboard/videos/1/
+WARNING 2025-04-14 22:59:33,964 log Not Found: /dashboard/videos/1/
+WARNING 2025-04-14 22:59:34,862 log Not Found: /dashboard/videos/1/
+INFO 2025-04-15 19:16:00,527 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-15 19:16:26,306 log Not Found: /favicon.ico
+INFO 2025-04-15 19:17:34,450 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 19:19:02,079 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-15 19:20:04,205 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-15 19:20:04,206 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-15 19:20:04,207 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-15 19:20:04,207 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-15 19:20:04,208 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-15 19:20:04,208 Image Importing BlpImagePlugin
+DEBUG 2025-04-15 19:20:04,213 Image Importing BmpImagePlugin
+DEBUG 2025-04-15 19:20:04,213 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-15 19:20:04,216 Image Importing CurImagePlugin
+DEBUG 2025-04-15 19:20:04,219 Image Importing DcxImagePlugin
+DEBUG 2025-04-15 19:20:04,224 Image Importing DdsImagePlugin
+DEBUG 2025-04-15 19:20:04,234 Image Importing EpsImagePlugin
+DEBUG 2025-04-15 19:20:04,238 Image Importing FitsImagePlugin
+DEBUG 2025-04-15 19:20:04,241 Image Importing FliImagePlugin
+DEBUG 2025-04-15 19:20:04,244 Image Importing FpxImagePlugin
+DEBUG 2025-04-15 19:20:04,248 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-15 19:20:04,249 Image Importing FtexImagePlugin
+DEBUG 2025-04-15 19:20:04,252 Image Importing GbrImagePlugin
+DEBUG 2025-04-15 19:20:04,255 Image Importing GifImagePlugin
+DEBUG 2025-04-15 19:20:04,255 Image Importing GribStubImagePlugin
+DEBUG 2025-04-15 19:20:04,258 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-15 19:20:04,261 Image Importing IcnsImagePlugin
+DEBUG 2025-04-15 19:20:04,272 Image Importing IcoImagePlugin
+DEBUG 2025-04-15 19:20:04,276 Image Importing ImImagePlugin
+DEBUG 2025-04-15 19:20:04,280 Image Importing ImtImagePlugin
+DEBUG 2025-04-15 19:20:04,283 Image Importing IptcImagePlugin
+DEBUG 2025-04-15 19:20:04,286 Image Importing JpegImagePlugin
+DEBUG 2025-04-15 19:20:04,287 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-15 19:20:04,287 Image Importing McIdasImagePlugin
+DEBUG 2025-04-15 19:20:04,291 Image Importing MicImagePlugin
+DEBUG 2025-04-15 19:20:04,295 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-15 19:20:04,295 Image Importing MpegImagePlugin
+DEBUG 2025-04-15 19:20:04,298 Image Importing MpoImagePlugin
+DEBUG 2025-04-15 19:20:04,308 Image Importing MspImagePlugin
+DEBUG 2025-04-15 19:20:04,311 Image Importing PalmImagePlugin
+DEBUG 2025-04-15 19:20:04,318 Image Importing PcdImagePlugin
+DEBUG 2025-04-15 19:20:04,321 Image Importing PcxImagePlugin
+DEBUG 2025-04-15 19:20:04,321 Image Importing PdfImagePlugin
+DEBUG 2025-04-15 19:20:04,336 Image Importing PixarImagePlugin
+DEBUG 2025-04-15 19:20:04,340 Image Importing PngImagePlugin
+DEBUG 2025-04-15 19:20:04,340 Image Importing PpmImagePlugin
+DEBUG 2025-04-15 19:20:04,341 Image Importing PsdImagePlugin
+DEBUG 2025-04-15 19:20:04,344 Image Importing QoiImagePlugin
+DEBUG 2025-04-15 19:20:04,347 Image Importing SgiImagePlugin
+DEBUG 2025-04-15 19:20:04,351 Image Importing SpiderImagePlugin
+DEBUG 2025-04-15 19:20:04,354 Image Importing SunImagePlugin
+DEBUG 2025-04-15 19:20:04,357 Image Importing TgaImagePlugin
+DEBUG 2025-04-15 19:20:04,360 Image Importing TiffImagePlugin
+DEBUG 2025-04-15 19:20:04,361 Image Importing WebPImagePlugin
+DEBUG 2025-04-15 19:20:04,422 Image Importing WmfImagePlugin
+DEBUG 2025-04-15 19:20:04,425 Image Importing XbmImagePlugin
+DEBUG 2025-04-15 19:20:04,428 Image Importing XpmImagePlugin
+DEBUG 2025-04-15 19:20:04,431 Image Importing XVThumbImagePlugin

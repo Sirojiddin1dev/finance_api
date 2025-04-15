@@ -185,7 +185,7 @@ class About(models.Model):
     text = models.TextField(_("Shu web-sayt haqingizda kiriting"))
 
     def __str__(self):
-        return self.title
+        return self.text
 
 
 class Help(models.Model):
