@@ -1,5 +1,6 @@
 from http.client import responses
 from django.shortcuts import render
+from django.template.defaultfilters import first
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -35,7 +36,7 @@ def get_user_notifications(request, pk):
     try:
         notification = Notification.objects.get(pk=pk)
     except Notification.DoesNotExist:
-        return Response({"error": "User topilmadi."}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"error": "Bildirishnoma topilmadi."}, status=status.HTTP_404_NOT_FOUND)
     serializer = NotificationSerializer(notification)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -87,14 +88,79 @@ def get_videos(request):
     method ='get',
     response ={200: VideoSerializer}
 )
+
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_video_detail(request, pk):
     try:
-        video = Video.objects.get(pk=pk)
+        video = Video.objects.get(pk=pk),first()
     except Video.DoesNotExist:
-        return Response({"detail": "Video topilmadi."}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"detail": "Video topilmadi."}, status=404)
 
     serializer = VideoSerializer(video)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    return Response(serializer.data, status=200)
 
 
+# @swagger_auto_schema(
+#     method ='get',
+#     response ={200: UserProfile}
+# )
+#
+# @swagger_auto_schema(
+#     method ='post',
+#     response ={200: UserProfile}
+# )
+#
+# @api_view(['GET', 'POST'])
+# @permission_classes([IsAuthenticated])
+# def user_profile_list_create(request):
+#     if request.method == 'GET':
+#         profiles = UserProfile.objects.all()
+#         serializer = UserProfileSerializer(profiles, many=True)
+#         return Response(serializer.data)
+#
+#     elif request.method == 'POST':
+#         serializer = UserProfileSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save(user=request.user)
+#             return Response(serializer.data, status=status.HTTP_201_CREATED)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#
+#
+# @swagger_auto_schema(
+#     method ='get',
+#     response ={200: UserProfile}
+# )
+#
+# @swagger_auto_schema(
+#     method ='put',
+#     response ={200: UserProfile}
+# )
+#
+# @swagger_auto_schema(
+#     method ='delete',
+#     response ={200: UserProfile}
+# )
+#
+# @api_view(['GET', 'PUT', 'DELETE'])
+# @permission_classes([IsAuthenticated])
+# def user_profile_detail(request, pk):
+#     try:
+#         profile = UserProfile.objects.get(pk=pk)
+#     except UserProfile.DoesNotExist:
+#         return Response({'error': 'Profile topilmadi'}, status=status.HTTP_404_NOT_FOUND)
+#
+#     if request.method == 'GET':
+#         serializer = UserProfileSerializer(profile)
+#         return Response(serializer.data)
+#
+#     elif request.method == 'PUT':
+#         serializer = UserProfileSerializer(profile, data=request.data, partial=True)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#
+#     elif request.method == 'DELETE':
+#         profile.delete()
+#         return Response({'message': 'Profil o‘chirildi'}, status=status.HTTP_204_NO_CONTENT)

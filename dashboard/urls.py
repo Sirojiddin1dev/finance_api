@@ -8,5 +8,7 @@ urlpatterns = [
     path('get_user_notification_detail/', get_user_notification, name='get_user_notification_detail'),
     path('get_user_notifications/<int:pk>/', get_user_notifications, name='get_user_notifications'),
     path('videos/<int:pk>/', get_video_detail, name = 'get_video_detail'),
+    # path('profiles/', user_profile_list_create, name='profile-list-create'),
+    # path('profiles/<int:pk>/', user_profile_detail, name='profile-detail'),
 
 ]
