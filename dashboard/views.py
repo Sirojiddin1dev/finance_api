@@ -101,66 +101,29 @@ def get_video_detail(request, pk):
     return Response(serializer.data, status=200)
 
 
-# @swagger_auto_schema(
-#     method ='get',
-#     response ={200: UserProfile}
-# )
-#
-# @swagger_auto_schema(
-#     method ='post',
-#     response ={200: UserProfile}
-# )
-#
-# @api_view(['GET', 'POST'])
-# @permission_classes([IsAuthenticated])
-# def user_profile_list_create(request):
-#     if request.method == 'GET':
-#         profiles = UserProfile.objects.all()
-#         serializer = UserProfileSerializer(profiles, many=True)
-#         return Response(serializer.data)
-#
-#     elif request.method == 'POST':
-#         serializer = UserProfileSerializer(data=request.data)
-#         if serializer.is_valid():
-#             serializer.save(user=request.user)
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-#
-#
-# @swagger_auto_schema(
-#     method ='get',
-#     response ={200: UserProfile}
-# )
-#
-# @swagger_auto_schema(
-#     method ='put',
-#     response ={200: UserProfile}
-# )
-#
-# @swagger_auto_schema(
-#     method ='delete',
-#     response ={200: UserProfile}
-# )
-#
-# @api_view(['GET', 'PUT', 'DELETE'])
-# @permission_classes([IsAuthenticated])
-# def user_profile_detail(request, pk):
-#     try:
-#         profile = UserProfile.objects.get(pk=pk)
-#     except UserProfile.DoesNotExist:
-#         return Response({'error': 'Profile topilmadi'}, status=status.HTTP_404_NOT_FOUND)
-#
-#     if request.method == 'GET':
-#         serializer = UserProfileSerializer(profile)
-#         return Response(serializer.data)
-#
-#     elif request.method == 'PUT':
-#         serializer = UserProfileSerializer(profile, data=request.data, partial=True)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-#
-#     elif request.method == 'DELETE':
-#         profile.delete()
-#         return Response({'message': 'Profil o‘chirildi'}, status=status.HTTP_204_NO_CONTENT)
+@swagger_auto_schema(method='get',
+                     responses={200: UserProfileSerializer}
+)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_user_profile(request):
+    profile = request.user.profile
+    serializer = UserProfileSerializer(profile)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+@swagger_auto_schema(method='patch',
+                     request_body=UserProfileSerializer,
+                     responses={200: UserProfileSerializer}
+)
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def update_user_profile(request):
+    profile = request.user.profile
+    serializer = UserProfileSerializer(profile, data=request.data, partial=True)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -103,7 +103,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
         fields = ['id', 'username', 'phone_number', 'avatar',
-                  'push_notifications', 'dark_mode', 'language']
+                  'push_notifications',]
 
 
 class NotificationSerializer(serializers.ModelSerializer):
