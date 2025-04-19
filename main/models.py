@@ -162,7 +162,7 @@ class UserProfile(models.Model):
         verbose_name_plural = "Foydalanuvchi profillari"
 
     def __str__(self):
-        return self.user.username
+        return self.user.usernamec
 
 
 class Notification(models.Model):

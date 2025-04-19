@@ -108,21 +108,22 @@ def get_video_detail(request, pk):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_user_profile(request):
-    profile = request.user.profile
-    serializer = UserProfileSerializer(profile)
+    user = request.user
+    profile = UserProfile.objects.get(user=user)
+    serializer = UserProfileSerializer(profile, data=request.data, partial=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-@swagger_auto_schema(method='patch',
+@swagger_auto_schema(method='put',
                      request_body=UserProfileSerializer,
                      responses={200: UserProfileSerializer}
 )
 
-@api_view(['PATCH'])
+@api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def update_user_profile(request):
-    profile = request.user.profile
-    serializer = UserProfileSerializer(profile, data=request.data, partial=True)
+    profile = request.user
+    serializer = UserProfileSerializer(profile, data=request.data)
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
