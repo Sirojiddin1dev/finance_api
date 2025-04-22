@@ -119,12 +119,17 @@ def get_user_profile(request):
                      responses={200: UserProfileSerializer}
 )
 
-@api_view(['PUT'])
-@permission_classes([IsAuthenticated])
-def update_user_profile(request):
+@api_view(['GET', 'PUT'])
+def user_profile_view(request):
     profile = request.user
-    serializer = UserProfileSerializer(profile, data=request.data)
-    if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_200_OK)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    if request.method == 'GET':
+        serializer = UserProfileSerializer(profile)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = UserProfileSerializer(profile, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -161,9 +161,6 @@ class UserProfile(models.Model):
         verbose_name = "Foydalanuvchi profili"
         verbose_name_plural = "Foydalanuvchi profillari"
 
-    def __str__(self):
-        return self.user.usernamec
-
 
 class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')

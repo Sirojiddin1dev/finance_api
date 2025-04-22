@@ -9881,3 +9881,767 @@ Traceback (most recent call last):
         "%s matching query does not exist." % self.model._meta.object_name
     )
 main.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+INFO 2025-04-19 18:55:24,943 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-19 18:55:34,843 log Forbidden: /dashboard/user/profile/
+INFO 2025-04-19 18:56:46,091 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-19 18:56:46,677 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-19 18:56:50,162 log Forbidden: /dashboard/user/profile/
+WARNING 2025-04-19 18:56:59,032 log Forbidden: /dashboard/user/profile/update/
+WARNING 2025-04-19 18:57:00,101 log Forbidden: /dashboard/user/profile/update/
+WARNING 2025-04-19 19:05:16,596 log Not Found: /favicon.ico
+INFO 2025-04-19 19:05:56,843 autoreload C:\Users\1\Desktop\finance_api\main\admin.py changed, reloading.
+INFO 2025-04-19 19:05:57,640 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-19 19:06:24,255 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-19 19:06:24,256 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-19 19:06:24,257 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-19 19:06:24,257 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-19 19:06:24,258 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-19 19:06:24,258 Image Importing BlpImagePlugin
+DEBUG 2025-04-19 19:06:24,262 Image Importing BmpImagePlugin
+DEBUG 2025-04-19 19:06:24,263 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-19 19:06:24,265 Image Importing CurImagePlugin
+DEBUG 2025-04-19 19:06:24,268 Image Importing DcxImagePlugin
+DEBUG 2025-04-19 19:06:24,273 Image Importing DdsImagePlugin
+DEBUG 2025-04-19 19:06:24,283 Image Importing EpsImagePlugin
+DEBUG 2025-04-19 19:06:24,287 Image Importing FitsImagePlugin
+DEBUG 2025-04-19 19:06:24,290 Image Importing FliImagePlugin
+DEBUG 2025-04-19 19:06:24,292 Image Importing FpxImagePlugin
+DEBUG 2025-04-19 19:06:24,295 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:06:24,296 Image Importing FtexImagePlugin
+DEBUG 2025-04-19 19:06:24,299 Image Importing GbrImagePlugin
+DEBUG 2025-04-19 19:06:24,301 Image Importing GifImagePlugin
+DEBUG 2025-04-19 19:06:24,301 Image Importing GribStubImagePlugin
+DEBUG 2025-04-19 19:06:24,307 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-19 19:06:24,310 Image Importing IcnsImagePlugin
+DEBUG 2025-04-19 19:06:24,319 Image Importing IcoImagePlugin
+DEBUG 2025-04-19 19:06:24,323 Image Importing ImImagePlugin
+DEBUG 2025-04-19 19:06:24,326 Image Importing ImtImagePlugin
+DEBUG 2025-04-19 19:06:24,329 Image Importing IptcImagePlugin
+DEBUG 2025-04-19 19:06:24,333 Image Importing JpegImagePlugin
+DEBUG 2025-04-19 19:06:24,333 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-19 19:06:24,333 Image Importing McIdasImagePlugin
+DEBUG 2025-04-19 19:06:24,336 Image Importing MicImagePlugin
+DEBUG 2025-04-19 19:06:24,340 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:06:24,341 Image Importing MpegImagePlugin
+DEBUG 2025-04-19 19:06:24,344 Image Importing MpoImagePlugin
+DEBUG 2025-04-19 19:06:24,352 Image Importing MspImagePlugin
+DEBUG 2025-04-19 19:06:24,354 Image Importing PalmImagePlugin
+DEBUG 2025-04-19 19:06:24,361 Image Importing PcdImagePlugin
+DEBUG 2025-04-19 19:06:24,364 Image Importing PcxImagePlugin
+DEBUG 2025-04-19 19:06:24,365 Image Importing PdfImagePlugin
+DEBUG 2025-04-19 19:06:24,379 Image Importing PixarImagePlugin
+DEBUG 2025-04-19 19:06:24,382 Image Importing PngImagePlugin
+DEBUG 2025-04-19 19:06:24,382 Image Importing PpmImagePlugin
+DEBUG 2025-04-19 19:06:24,383 Image Importing PsdImagePlugin
+DEBUG 2025-04-19 19:06:24,385 Image Importing QoiImagePlugin
+DEBUG 2025-04-19 19:06:24,388 Image Importing SgiImagePlugin
+DEBUG 2025-04-19 19:06:24,391 Image Importing SpiderImagePlugin
+DEBUG 2025-04-19 19:06:24,395 Image Importing SunImagePlugin
+DEBUG 2025-04-19 19:06:24,398 Image Importing TgaImagePlugin
+DEBUG 2025-04-19 19:06:24,401 Image Importing TiffImagePlugin
+DEBUG 2025-04-19 19:06:24,401 Image Importing WebPImagePlugin
+DEBUG 2025-04-19 19:06:24,453 Image Importing WmfImagePlugin
+DEBUG 2025-04-19 19:06:24,456 Image Importing XbmImagePlugin
+DEBUG 2025-04-19 19:06:24,461 Image Importing XpmImagePlugin
+DEBUG 2025-04-19 19:06:24,464 Image Importing XVThumbImagePlugin
+ERROR 2025-04-19 19:06:24,676 log Internal Server Error: /admin/main/userprofile/add/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\main\models.py", line 165, in __str__
+    return self.user.usernamec
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'usernamec'. Did you mean: 'username'?
+INFO 2025-04-19 19:06:36,798 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
+INFO 2025-04-19 19:06:37,397 autoreload Watching for file changes with StatReloader
+INFO 2025-04-19 19:06:52,908 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
+INFO 2025-04-19 19:06:53,537 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-19 19:06:56,277 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-19 19:06:56,278 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-19 19:06:56,278 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-19 19:06:56,279 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-19 19:06:56,279 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-19 19:06:56,279 Image Importing BlpImagePlugin
+DEBUG 2025-04-19 19:06:56,281 Image Importing BmpImagePlugin
+DEBUG 2025-04-19 19:06:56,282 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-19 19:06:56,283 Image Importing CurImagePlugin
+DEBUG 2025-04-19 19:06:56,284 Image Importing DcxImagePlugin
+DEBUG 2025-04-19 19:06:56,286 Image Importing DdsImagePlugin
+DEBUG 2025-04-19 19:06:56,293 Image Importing EpsImagePlugin
+DEBUG 2025-04-19 19:06:56,295 Image Importing FitsImagePlugin
+DEBUG 2025-04-19 19:06:56,297 Image Importing FliImagePlugin
+DEBUG 2025-04-19 19:06:56,298 Image Importing FpxImagePlugin
+DEBUG 2025-04-19 19:06:56,299 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:06:56,300 Image Importing FtexImagePlugin
+DEBUG 2025-04-19 19:06:56,301 Image Importing GbrImagePlugin
+DEBUG 2025-04-19 19:06:56,302 Image Importing GifImagePlugin
+DEBUG 2025-04-19 19:06:56,303 Image Importing GribStubImagePlugin
+DEBUG 2025-04-19 19:06:56,303 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-19 19:06:56,304 Image Importing IcnsImagePlugin
+DEBUG 2025-04-19 19:06:56,305 Image Importing IcoImagePlugin
+DEBUG 2025-04-19 19:06:56,307 Image Importing ImImagePlugin
+DEBUG 2025-04-19 19:06:56,308 Image Importing ImtImagePlugin
+DEBUG 2025-04-19 19:06:56,309 Image Importing IptcImagePlugin
+DEBUG 2025-04-19 19:06:56,310 Image Importing JpegImagePlugin
+DEBUG 2025-04-19 19:06:56,311 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-19 19:06:56,311 Image Importing McIdasImagePlugin
+DEBUG 2025-04-19 19:06:56,311 Image Importing MicImagePlugin
+DEBUG 2025-04-19 19:06:56,312 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:06:56,313 Image Importing MpegImagePlugin
+DEBUG 2025-04-19 19:06:56,313 Image Importing MpoImagePlugin
+DEBUG 2025-04-19 19:06:56,315 Image Importing MspImagePlugin
+DEBUG 2025-04-19 19:06:56,316 Image Importing PalmImagePlugin
+DEBUG 2025-04-19 19:06:56,317 Image Importing PcdImagePlugin
+DEBUG 2025-04-19 19:06:56,318 Image Importing PcxImagePlugin
+DEBUG 2025-04-19 19:06:56,318 Image Importing PdfImagePlugin
+DEBUG 2025-04-19 19:06:56,322 Image Importing PixarImagePlugin
+DEBUG 2025-04-19 19:06:56,323 Image Importing PngImagePlugin
+DEBUG 2025-04-19 19:06:56,324 Image Importing PpmImagePlugin
+DEBUG 2025-04-19 19:06:56,324 Image Importing PsdImagePlugin
+DEBUG 2025-04-19 19:06:56,325 Image Importing QoiImagePlugin
+DEBUG 2025-04-19 19:06:56,327 Image Importing SgiImagePlugin
+DEBUG 2025-04-19 19:06:56,328 Image Importing SpiderImagePlugin
+DEBUG 2025-04-19 19:06:56,329 Image Importing SunImagePlugin
+DEBUG 2025-04-19 19:06:56,329 Image Importing TgaImagePlugin
+DEBUG 2025-04-19 19:06:56,330 Image Importing TiffImagePlugin
+DEBUG 2025-04-19 19:06:56,330 Image Importing WebPImagePlugin
+DEBUG 2025-04-19 19:06:56,332 Image Importing WmfImagePlugin
+DEBUG 2025-04-19 19:06:56,332 Image Importing XbmImagePlugin
+DEBUG 2025-04-19 19:06:56,334 Image Importing XpmImagePlugin
+DEBUG 2025-04-19 19:06:56,334 Image Importing XVThumbImagePlugin
+ERROR 2025-04-19 19:06:56,368 log Internal Server Error: /admin/main/userprofile/add/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\main\models.py", line 165, in __str__
+    return self.user.user
+           ^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'user'
+INFO 2025-04-19 19:07:35,295 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
+INFO 2025-04-19 19:07:35,802 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-19 19:07:41,676 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-19 19:07:41,676 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-19 19:07:41,677 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-19 19:07:41,677 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-19 19:07:41,677 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-19 19:07:41,678 Image Importing BlpImagePlugin
+DEBUG 2025-04-19 19:07:41,679 Image Importing BmpImagePlugin
+DEBUG 2025-04-19 19:07:41,680 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-19 19:07:41,681 Image Importing CurImagePlugin
+DEBUG 2025-04-19 19:07:41,682 Image Importing DcxImagePlugin
+DEBUG 2025-04-19 19:07:41,685 Image Importing DdsImagePlugin
+DEBUG 2025-04-19 19:07:41,688 Image Importing EpsImagePlugin
+DEBUG 2025-04-19 19:07:41,690 Image Importing FitsImagePlugin
+DEBUG 2025-04-19 19:07:41,691 Image Importing FliImagePlugin
+DEBUG 2025-04-19 19:07:41,695 Image Importing FpxImagePlugin
+DEBUG 2025-04-19 19:07:41,697 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:07:41,698 Image Importing FtexImagePlugin
+DEBUG 2025-04-19 19:07:41,699 Image Importing GbrImagePlugin
+DEBUG 2025-04-19 19:07:41,701 Image Importing GifImagePlugin
+DEBUG 2025-04-19 19:07:41,701 Image Importing GribStubImagePlugin
+DEBUG 2025-04-19 19:07:41,703 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-19 19:07:41,704 Image Importing IcnsImagePlugin
+DEBUG 2025-04-19 19:07:41,708 Image Importing IcoImagePlugin
+DEBUG 2025-04-19 19:07:41,710 Image Importing ImImagePlugin
+DEBUG 2025-04-19 19:07:41,711 Image Importing ImtImagePlugin
+DEBUG 2025-04-19 19:07:41,712 Image Importing IptcImagePlugin
+DEBUG 2025-04-19 19:07:41,714 Image Importing JpegImagePlugin
+DEBUG 2025-04-19 19:07:41,714 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-19 19:07:41,714 Image Importing McIdasImagePlugin
+DEBUG 2025-04-19 19:07:41,716 Image Importing MicImagePlugin
+DEBUG 2025-04-19 19:07:41,718 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:07:41,719 Image Importing MpegImagePlugin
+DEBUG 2025-04-19 19:07:41,720 Image Importing MpoImagePlugin
+DEBUG 2025-04-19 19:07:41,723 Image Importing MspImagePlugin
+DEBUG 2025-04-19 19:07:41,724 Image Importing PalmImagePlugin
+DEBUG 2025-04-19 19:07:41,726 Image Importing PcdImagePlugin
+DEBUG 2025-04-19 19:07:41,727 Image Importing PcxImagePlugin
+DEBUG 2025-04-19 19:07:41,728 Image Importing PdfImagePlugin
+DEBUG 2025-04-19 19:07:41,732 Image Importing PixarImagePlugin
+DEBUG 2025-04-19 19:07:41,734 Image Importing PngImagePlugin
+DEBUG 2025-04-19 19:07:41,734 Image Importing PpmImagePlugin
+DEBUG 2025-04-19 19:07:41,734 Image Importing PsdImagePlugin
+DEBUG 2025-04-19 19:07:41,736 Image Importing QoiImagePlugin
+DEBUG 2025-04-19 19:07:41,737 Image Importing SgiImagePlugin
+DEBUG 2025-04-19 19:07:41,738 Image Importing SpiderImagePlugin
+DEBUG 2025-04-19 19:07:41,739 Image Importing SunImagePlugin
+DEBUG 2025-04-19 19:07:41,741 Image Importing TgaImagePlugin
+DEBUG 2025-04-19 19:07:41,742 Image Importing TiffImagePlugin
+DEBUG 2025-04-19 19:07:41,742 Image Importing WebPImagePlugin
+DEBUG 2025-04-19 19:07:41,743 Image Importing WmfImagePlugin
+DEBUG 2025-04-19 19:07:41,744 Image Importing XbmImagePlugin
+DEBUG 2025-04-19 19:07:41,746 Image Importing XpmImagePlugin
+DEBUG 2025-04-19 19:07:41,747 Image Importing XVThumbImagePlugin
+ERROR 2025-04-19 19:07:41,780 log Internal Server Error: /admin/main/userprofile/add/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+TypeError: __str__ returned non-string (type bool)
+INFO 2025-04-19 19:07:57,734 autoreload C:\Users\1\Desktop\finance_api\main\models.py changed, reloading.
+INFO 2025-04-19 19:07:58,299 autoreload Watching for file changes with StatReloader
+DEBUG 2025-04-19 19:08:02,848 PngImagePlugin STREAM b'IHDR' 16 13
+DEBUG 2025-04-19 19:08:02,849 PngImagePlugin STREAM b'sRGB' 41 1
+DEBUG 2025-04-19 19:08:02,849 PngImagePlugin STREAM b'gAMA' 54 4
+DEBUG 2025-04-19 19:08:02,850 PngImagePlugin STREAM b'pHYs' 70 9
+DEBUG 2025-04-19 19:08:02,850 PngImagePlugin STREAM b'IDAT' 91 7611
+DEBUG 2025-04-19 19:08:02,850 Image Importing BlpImagePlugin
+DEBUG 2025-04-19 19:08:02,853 Image Importing BmpImagePlugin
+DEBUG 2025-04-19 19:08:02,853 Image Importing BufrStubImagePlugin
+DEBUG 2025-04-19 19:08:02,854 Image Importing CurImagePlugin
+DEBUG 2025-04-19 19:08:02,856 Image Importing DcxImagePlugin
+DEBUG 2025-04-19 19:08:02,858 Image Importing DdsImagePlugin
+DEBUG 2025-04-19 19:08:02,862 Image Importing EpsImagePlugin
+DEBUG 2025-04-19 19:08:02,864 Image Importing FitsImagePlugin
+DEBUG 2025-04-19 19:08:02,865 Image Importing FliImagePlugin
+DEBUG 2025-04-19 19:08:02,870 Image Importing FpxImagePlugin
+DEBUG 2025-04-19 19:08:02,872 Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:08:02,872 Image Importing FtexImagePlugin
+DEBUG 2025-04-19 19:08:02,874 Image Importing GbrImagePlugin
+DEBUG 2025-04-19 19:08:02,875 Image Importing GifImagePlugin
+DEBUG 2025-04-19 19:08:02,875 Image Importing GribStubImagePlugin
+DEBUG 2025-04-19 19:08:02,876 Image Importing Hdf5StubImagePlugin
+DEBUG 2025-04-19 19:08:02,878 Image Importing IcnsImagePlugin
+DEBUG 2025-04-19 19:08:02,882 Image Importing IcoImagePlugin
+DEBUG 2025-04-19 19:08:02,884 Image Importing ImImagePlugin
+DEBUG 2025-04-19 19:08:02,885 Image Importing ImtImagePlugin
+DEBUG 2025-04-19 19:08:02,887 Image Importing IptcImagePlugin
+DEBUG 2025-04-19 19:08:02,888 Image Importing JpegImagePlugin
+DEBUG 2025-04-19 19:08:02,888 Image Importing Jpeg2KImagePlugin
+DEBUG 2025-04-19 19:08:02,888 Image Importing McIdasImagePlugin
+DEBUG 2025-04-19 19:08:02,889 Image Importing MicImagePlugin
+DEBUG 2025-04-19 19:08:02,891 Image Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG 2025-04-19 19:08:02,891 Image Importing MpegImagePlugin
+DEBUG 2025-04-19 19:08:02,892 Image Importing MpoImagePlugin
+DEBUG 2025-04-19 19:08:02,894 Image Importing MspImagePlugin
+DEBUG 2025-04-19 19:08:02,896 Image Importing PalmImagePlugin
+DEBUG 2025-04-19 19:08:02,898 Image Importing PcdImagePlugin
+DEBUG 2025-04-19 19:08:02,899 Image Importing PcxImagePlugin
+DEBUG 2025-04-19 19:08:02,899 Image Importing PdfImagePlugin
+DEBUG 2025-04-19 19:08:02,904 Image Importing PixarImagePlugin
+DEBUG 2025-04-19 19:08:02,905 Image Importing PngImagePlugin
+DEBUG 2025-04-19 19:08:02,905 Image Importing PpmImagePlugin
+DEBUG 2025-04-19 19:08:02,905 Image Importing PsdImagePlugin
+DEBUG 2025-04-19 19:08:02,907 Image Importing QoiImagePlugin
+DEBUG 2025-04-19 19:08:02,908 Image Importing SgiImagePlugin
+DEBUG 2025-04-19 19:08:02,909 Image Importing SpiderImagePlugin
+DEBUG 2025-04-19 19:08:02,910 Image Importing SunImagePlugin
+DEBUG 2025-04-19 19:08:02,911 Image Importing TgaImagePlugin
+DEBUG 2025-04-19 19:08:02,912 Image Importing TiffImagePlugin
+DEBUG 2025-04-19 19:08:02,912 Image Importing WebPImagePlugin
+DEBUG 2025-04-19 19:08:02,914 Image Importing WmfImagePlugin
+DEBUG 2025-04-19 19:08:02,915 Image Importing XbmImagePlugin
+DEBUG 2025-04-19 19:08:02,917 Image Importing XpmImagePlugin
+DEBUG 2025-04-19 19:08:02,918 Image Importing XVThumbImagePlugin
+ERROR 2025-04-19 19:08:27,988 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 128, in update_user_profile
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 247, in data
+    raise AssertionError(msg)
+AssertionError: When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+You should either call `.is_valid()` first, or access `.initial_data` instead.
+ERROR 2025-04-19 19:08:29,005 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 128, in update_user_profile
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 247, in data
+    raise AssertionError(msg)
+AssertionError: When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+You should either call `.is_valid()` first, or access `.initial_data` instead.
+INFO 2025-04-19 19:09:24,674 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-19 19:09:30,591 log Forbidden: /dashboard/user/profile/update/
+WARNING 2025-04-19 19:09:41,060 log Forbidden: /dashboard/user/profile/
+WARNING 2025-04-19 19:10:57,678 log Not Found: /api/token/
+WARNING 2025-04-19 19:10:57,773 log Not Found: /favicon.ico
+INFO 2025-04-22 15:20:45,580 autoreload Watching for file changes with StatReloader
+INFO 2025-04-22 15:24:23,657 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-22 15:24:52,293 log Forbidden: /dashboard/user/profile/update/
+INFO 2025-04-22 15:31:17,368 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-22 15:31:18,288 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-22 15:31:31,371 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+INFO 2025-04-22 15:32:51,017 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-22 15:33:04,330 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+ERROR 2025-04-22 15:33:26,623 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+ERROR 2025-04-22 15:33:29,164 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+WARNING 2025-04-22 15:35:02,990 log Not Found: /favicon.ico
+ERROR 2025-04-22 15:36:26,647 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+main.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+INFO 2025-04-22 15:37:05,612 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-22 15:37:06,528 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-22 15:37:16,788 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+main.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+ERROR 2025-04-22 15:37:22,049 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+main.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+ERROR 2025-04-22 15:37:36,907 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 124, in user_profile_view
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+main.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+INFO 2025-04-22 15:37:59,416 autoreload C:\Users\1\Desktop\finance_api\dashboard\views.py changed, reloading.
+INFO 2025-04-22 15:38:00,164 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-22 15:38:11,271 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 133, in user_profile_view
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.update(self.instance, validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 1021, in update
+    raise_errors_on_nested_writes('update', self, validated_data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 873, in raise_errors_on_nested_writes
+    assert not any(
+           ^^^^^^^^
+    ...<5 lines>...
+    ), (
+    ^
+AssertionError: The `.update()` method does not support writable dotted-source fields by default.
+Write an explicit `.update()` method for serializer `main.serializers.UserProfileSerializer`, or set `read_only=True` on dotted-source serializer fields.
+ERROR 2025-04-22 15:38:11,703 log Internal Server Error: /dashboard/user/profile/update/
+Traceback (most recent call last):
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\1\Desktop\finance_api\dashboard\views.py", line 133, in user_profile_view
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.update(self.instance, validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 1021, in update
+    raise_errors_on_nested_writes('update', self, validated_data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Desktop\finance_api\.venv\Lib\site-packages\rest_framework\serializers.py", line 873, in raise_errors_on_nested_writes
+    assert not any(
+           ^^^^^^^^
+    ...<5 lines>...
+    ), (
+    ^
+AssertionError: The `.update()` method does not support writable dotted-source fields by default.
+Write an explicit `.update()` method for serializer `main.serializers.UserProfileSerializer`, or set `read_only=True` on dotted-source serializer fields.

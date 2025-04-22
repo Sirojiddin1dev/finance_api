@@ -7,13 +7,14 @@ from django.shortcuts import render, redirect
 from django.urls import path
 from django.db import transaction
 
-from .models import User, BalanceAdjustmentLog,About,Video,Help,Notification
+from .models import User, BalanceAdjustmentLog,About,Video,Help,Notification,UserProfile
 
 
 admin.site.register(About)
 admin.site.register(Video)
 admin.site.register(Help)
 admin.site.register(Notification)
+admin.site.register(UserProfile)
 
 
 class BalanceAdjustmentForm(forms.Form):
