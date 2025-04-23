@@ -118,6 +118,7 @@ def get_user_profile(request):
                      request_body=UserProfileSerializer,
                      responses={200: UserProfileSerializer}
 )
+@permission_classes([IsAuthenticated])
 @api_view(['PUT'])
 def edit_user_profile_view(request):
     profile = request.user
