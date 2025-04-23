@@ -118,18 +118,13 @@ def get_user_profile(request):
                      request_body=UserProfileSerializer,
                      responses={200: UserProfileSerializer}
 )
-
-@api_view(['GET', 'PUT'])
-def user_profile_view(request):
+@api_view(['PUT'])
+def edit_user_profile_view(request):
     profile = request.user
+    serializer = UserProfileSerializer(profile, data=request.data, partial=True)
 
-    if request.method == 'GET':
-        serializer = UserProfileSerializer(profile)
+    if serializer.is_valid():
+        serializer.save()
         return Response(serializer.data)
 
-    elif request.method == 'PUT':
-        serializer = UserProfileSerializer(profile, data=request.data, partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

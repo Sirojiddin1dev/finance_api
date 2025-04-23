@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import get_help, get_videos, get_about,get_video_detail,get_user_notifications,get_user_notification,get_user_profile,user_profile_view
+from .views import get_help, get_videos, get_about,get_video_detail,get_user_notifications,get_user_notification,get_user_profile,edit_user_profile_view
 
 urlpatterns = [
     path('help/', get_help, name='get_help'),
@@ -9,6 +9,6 @@ urlpatterns = [
     path('get_user_notifications/<int:pk>/', get_user_notifications, name='get_user_notifications'),
     path('videos/<int:pk>/', get_video_detail, name = 'get_video_detail'),
     path('user/profile/', get_user_profile, name='user-profile'),
-    path('user/profile/update/', user_profile_view, name='user-profile-update'),
+    path('user/profile/update/', edit_user_profile_view, name='user-profile-update'),
 
 ]
