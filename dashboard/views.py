@@ -5,9 +5,11 @@ from drf_yasg.utils import swagger_auto_schema
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
-from main.models import Notification, About , Video , Help, User
-from main.serializers import NotificationSerializer, AboutSerializer, VideoSerializer, HelpSerializer, UserAvatarNotificationSerializer
+from main.models import Notification, About , Video , Help, User, DailyTransaction
+from main.serializers import NotificationSerializer, AboutSerializer, VideoSerializer, HelpSerializer, \
+    UserAvatarNotificationSerializer, DailyTransactionSerializer
 from rest_framework.decorators import api_view, permission_classes
+from django.shortcuts import get_object_or_404
 from drf_yasg import openapi
 
 
@@ -127,3 +129,52 @@ def edit_user_profile_view(request):
         return Response(serializer.data)
 
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@swagger_auto_schema(
+    method='get',
+    responses={200: DailyTransactionSerializer}
+)
+@api_view(['GET'])
+def daily_transaction_list(request):
+    if request.method == 'GET':
+        transactions = DailyTransaction.objects.filter(user=request.user).order_by('-date', '-created_at')
+        serializer = DailyTransactionSerializer(transactions, many=True)
+        return Response(serializer.data)
+
+
+@swagger_auto_schema(
+    method='post',
+    responses={200: DailyTransactionSerializer}
+)
+@api_view(['POST'])
+def daily_transaction_create(request):
+    if request.method == 'POST':
+        serializer = DailyTransactionSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(user=request.user)  # Automatically associate the user
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@swagger_auto_schema(
+    method='put',
+    responses={200: DailyTransactionSerializer}
+)
+@api_view(['PUT'])
+def daily_transaction_update(request, pk):
+    if request.method == 'PUT':
+        transaction = get_object_or_404(DailyTransaction, pk=pk, user=request.user)
+        serializer = DailyTransactionSerializer(transaction, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['DELETE'])
+def daily_transaction_delete(request, pk):
+    if request.method == 'DELETE':
+        transaction = get_object_or_404(DailyTransaction, pk=pk, user=request.user)
+        transaction.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
