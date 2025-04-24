@@ -111,8 +111,8 @@ class DailyTransaction(models.Model):
         verbose_name_plural = "Kunlik tranzaksiyalar"
         ordering = ['-date', '-created_at']
 
-    # def __str__(self):
-    #     return f"{self.user.username} - {self.category.name} - {self.amount}"
+    def __str__(self):
+        return f"{self.user.username} - {self.category} - {self.amount}"
 
 
 # class Investment(models.Model):

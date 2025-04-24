@@ -145,6 +145,7 @@ def daily_transaction_list(request):
 
 @swagger_auto_schema(
     method='post',
+    request_body=DailyTransactionSerializer,
     responses={200: DailyTransactionSerializer}
 )
 @api_view(['POST'])
