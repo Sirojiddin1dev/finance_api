@@ -3,6 +3,13 @@ from .models import *
 from django.db.models import Sum
 from django.utils import timezone
 from datetime import datetime, timedelta
+from rest_framework import serializers
+from .models import User
+
+class UserAvatarNotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['avatar', 'push_notifications']
 
 
 class UserBalanceSerializer(serializers.ModelSerializer):
@@ -94,33 +101,6 @@ class DailyTransactionSerializer(serializers.ModelSerializer):
 #                   'amount', 'status', 'status_display', 'description',
 #                   'date', 'created_at']
 #         read_only_fields = ['user', 'status']
-
-
-class UserProfileSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField(source='user.email', required=False)
-    first_name = serializers.CharField(source='user.first_name', required=False)
-    last_name = serializers.CharField(source='user.last_name', required=False)
-
-    class Meta:
-        model = UserProfile
-        fields = ['avatar', 'push_notifications', 'email', 'first_name', 'last_name']
-
-    def update(self, instance, validated_data):
-        user_data = validated_data.pop('user', {})
-
-        instance.avatar = validated_data.get('avatar', instance.avatar)
-        instance.push_notifications = validated_data.get('push_notifications', instance.push_notifications)
-        instance.save()
-
-        # user instance yangilanadi
-        user = instance.user
-        user.email = user_data.get('email', user.email)
-        user.first_name = user_data.get('first_name', user.first_name)
-        user.last_name = user_data.get('last_name', user.last_name)
-        user.save()
-
-        return instance
-
 
 
 class NotificationSerializer(serializers.ModelSerializer):

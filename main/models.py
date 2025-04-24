@@ -11,6 +11,8 @@ class User(AbstractUser):
     otp = models.CharField(max_length=6, null=True, blank=True)
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=30, blank=True)
+    avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
+    push_notifications = models.BooleanField(default=True)
 
     # Balans maydonlari
     php_invest_balance = models.DecimalField(max_digits=15, decimal_places=2, default=0)
@@ -151,15 +153,7 @@ class DailyTransaction(models.Model):
 #         return f"{self.user.username} - {self.get_type_display()} - {self.amount}"
 
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
-    avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
-    push_notifications = models.BooleanField(default=True)
 
-
-    class Meta:
-        verbose_name = "Foydalanuvchi profili"
-        verbose_name_plural = "Foydalanuvchi profillari"
 
 
 class Notification(models.Model):
