@@ -11782,3 +11782,4 @@ INFO 2025-04-24 18:58:52,614 autoreload Watching for file changes with StatReloa
 INFO 2025-04-24 18:59:25,459 autoreload C:\Users\user\Desktop\finance_api\dashboard\views.py changed, reloading.
 INFO 2025-04-24 18:59:26,896 autoreload Watching for file changes with StatReloader
 WARNING 2025-04-24 19:00:59,477 log Not Found: /favicon.ico
+INFO 2025-04-25 18:46:45,148 autoreload Watching for file changes with StatReloader

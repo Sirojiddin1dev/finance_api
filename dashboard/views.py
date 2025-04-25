@@ -159,6 +159,23 @@ def daily_transaction_create(request):
 
 
 @swagger_auto_schema(
+    method='get',
+    responses={200: DailyTransactionSerializer}
+)
+@api_view(['GET'])
+def daily_transaction_detail(request, pk):
+    if not request.user.is_authenticated:
+        return Response({"detail": "Authentication required."}, status=401)
+
+    try:
+        transaction = DailyTransaction.objects.get(pk=pk, user=request.user)
+        serializer = DailyTransactionSerializer(transaction)
+        return Response(serializer.data)
+    except DailyTransaction.DoesNotExist:
+        return Response({"detail": f"Transaction with pk={pk} not found for this user."}, status=404)
+
+
+@swagger_auto_schema(
     method='put',
     responses={200: DailyTransactionSerializer}
 )
