@@ -136,7 +136,7 @@ def edit_user_profile_view(request):
     responses={200: DailyTransactionSerializer}
 )
 @api_view(['GET'])
-def daily_transaction_list(request):
+def daily_transaction_all(request):
     if request.method == 'GET':
         transactions = DailyTransaction.objects.filter(user=request.user).order_by('-date', '-created_at')
         serializer = DailyTransactionSerializer(transactions, many=True)

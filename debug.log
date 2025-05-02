@@ -11783,3 +11783,5 @@ INFO 2025-04-24 18:59:25,459 autoreload C:\Users\user\Desktop\finance_api\dashbo
 INFO 2025-04-24 18:59:26,896 autoreload Watching for file changes with StatReloader
 WARNING 2025-04-24 19:00:59,477 log Not Found: /favicon.ico
 INFO 2025-04-25 18:46:45,148 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 21:29:26,238 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-29 21:29:37,164 log Not Found: /favicon.ico
