@@ -11785,3 +11785,73 @@ WARNING 2025-04-24 19:00:59,477 log Not Found: /favicon.ico
 INFO 2025-04-25 18:46:45,148 autoreload Watching for file changes with StatReloader
 INFO 2025-04-29 21:29:26,238 autoreload Watching for file changes with StatReloader
 WARNING 2025-04-29 21:29:37,164 log Not Found: /favicon.ico
+INFO 2025-05-18 14:05:09,332 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:29:00,415 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:31:07,645 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:31:09,598 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:31:25,126 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:31:27,207 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:31:40,216 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:31:42,142 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:32:52,066 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:32:53,898 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:33:20,077 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:33:21,979 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:34:21,075 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:34:23,274 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 17:34:54,322 autoreload C:\Users\user\Desktop\finance_api\main\views.py changed, reloading.
+INFO 2025-05-19 17:34:56,319 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 17:40:57,919 log Internal Server Error: /api/forgot-password/send-code/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\finance_api\main\views.py", line 146, in post
+    send_mail(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\mail\backends\smtp.py", line 85, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 853, in create_connection
+    raise exceptions[0]
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 838, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+INFO 2025-05-19 18:44:36,515 autoreload C:\Users\user\Desktop\finance_api\home\settings.py changed, reloading.
+INFO 2025-05-19 18:44:37,775 autoreload Watching for file changes with StatReloader

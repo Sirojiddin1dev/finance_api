@@ -9,16 +9,17 @@ class User(AbstractUser):
     phone_number = models.CharField(max_length=15, unique=True)
     is_phone_verified = models.BooleanField(default=False)
     otp = models.CharField(max_length=6, null=True, blank=True)
-    first_name = models.CharField(max_length=30, blank=True)
-    last_name = models.CharField(max_length=30, blank=True)
+    first_name = models.CharField(max_length=30,  null=True,blank=True)
+    last_name = models.CharField(max_length=30,  null=True,blank=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     push_notifications = models.BooleanField(default=True)
 
     # Balans maydonlari
     php_invest_balance = models.DecimalField(max_digits=15, decimal_places=2, default=0)
     php_reit_balance = models.DecimalField(max_digits=15, decimal_places=2, default=0)
+    email = models.EmailField(unique=True)
 
-    USERNAME_FIELD = 'phone_number'
+    USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
     def __str__(self):
